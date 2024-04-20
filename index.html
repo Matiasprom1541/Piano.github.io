@@ -1,0 +1,155 @@
+
+<!doctype html>
+<html>
+<head>
+
+<title>Piano</title>
+
+
+</head>
+<body>
+
+<div class="piano-structure">
+
+<div class="opciones">
+
+<button id="trompeta">Trompeta</button>
+<button id="piano">Piano</button>
+<button id="violin">Violin</button>
+
+</div>
+
+<div class="teclas">
+
+<button id="do">Do</button>
+<button id="re">Re</button>
+<button id="mi">Mi</button>
+<button id="fa">Fa</button>
+<button id="so">So</button>
+<button id="la">la</button>
+<button id="si">Si</button>
+
+</div>
+
+<div class="teclas2">
+
+<button id="lt1">#1</button>
+<button id="lt2">#2</button>
+<button id="lt3">#3</button>
+<button id="lt4">#4</button>
+<button id="lt5">#5</button>
+<button id="lt6">#6</button>
+
+</div>
+
+</div>
+
+<style>
+
+body{
+    background-color:#222;
+}
+
+.piano-structure{
+    
+    background-color:#ff757;
+    width:95%;
+    height:40ch;
+    border-radius:10px;
+    border:2px solid white;
+    overflow:hidden;   
+}
+
+.opciones button{
+    border-radius:10px;
+     width:19%;
+    height:4ch;     
+    -webkit-text-stroke:0.55px black;  
+    --color: darkorange;
+     --dark-color: color-mix(in srgb, var(--color), black 25%); --light-color: color-mix(in srgb, var(--color), white 25%); border: 1px solid var(--dark-color); border-bottom-width: 8px; border-top-color: var(--light-color); background: var(--color); color: #fff; font-family: Jost, sans-serif; font-size: 1.2rem; padding: 0.25rem 0.75rem; transition: transform 0.2s, border 0.2s; &:active { border-bottom-width: 1px;
+      transform: translateY(7px); background: var(--dark-color); }
+}
+
+.teclas{
+display:flex;
+margin-top:20%;
+
+}
+
+.teclas button{
+    
+    width:30%;
+    height:19ch;     
+    -webkit-text-stroke:0.55px black;  
+    --color: white;
+     --dark-color: color-mix(in srgb, var(--color), black 25%); --light-color: color-mix(in srgb, var(--color), white 25%); border: 1px solid var(--dark-color); border-bottom-width: 8px; border-top-color: var(--light-color); background: var(--color); color: #fff; font-family: Jost, sans-serif; font-size: 1.2rem; padding: 0.25rem 0.75rem; transition: transform 0.2s, border 0.2s; &:active { border-bottom-width: 1px;
+      transform: translateY(7px); background: var(--dark-color); }
+}
+
+.teclas2{
+    position:absolute;
+    display:flex;
+    gap:37px;
+    margin-left:6%;
+    margin-top:-36%;
+    
+}
+
+.teclas2 button{
+   
+width:18%;
+    height:9ch;     
+    -webkit-text-stroke:0.55px black;  
+    --color: black;
+     --dark-color: color-mix(in srgb, var(--color), black 25%); --light-color: color-mix(in srgb, var(--color), white 25%); border: 1px solid var(--dark-color); border-bottom-width: 8px; border-top-color: var(--light-color); background: var(--color); color: #fff; font-family: Jost, sans-serif; font-size: 1.2rem; padding: 0.25rem 0.75rem; transition: transform 0.2s, border 0.2s; &:active { border-bottom-width: 1px;
+      transform: translateY(7px); background: var(--dark-color);
+      
+       }
+
+</style> 
+
+<script>
+
+const trompeta=document.getElementById("trompeta");
+const piano=document.getElementById("piano");
+const violin=document.getElementById("violin");
+
+trompeta.addEventListener("click",() => {
+    
+    alert("no disponible");
+    
+})
+
+piano.addEventListener("click",() => {
+    
+    alert("¡Activado!");
+    
+})
+
+violin.addEventListener("click",() => {
+    
+    alert("No disponible");
+    
+})
+
+</script>
+
+<script>
+const do=document.getElementById("do");
+const re=document.getElementById("re");
+const mi=document.getElementById("mi");
+const fa=document.getElementById("fa");
+const so=document.getElementById("so");
+const la=document.getElementById("la");
+const si=document.getElementById("si");
+const lt1=document.getElementById("lt1");
+const lt2=document.getElementById("lt2");
+const lt3=document.getElementById("lt3");
+const lt4=document.getElementById("lt4");
+const lt5=document.getElementById("lt5");
+const lt6=document.getElementById("lt6");
+
+</script>
+
+</body>
+</html>
